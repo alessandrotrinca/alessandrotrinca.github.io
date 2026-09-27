@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Publications — Alessandro Trinca</title>
+<meta name="description" content="Refereed papers and preprints by Alessandro Trinca, with citation counts synced from NASA ADS.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<div class="bg-parallax" aria-hidden="true"></div>
+
+<nav>
+  <a class="nav-name" href="index.html">Alessandro Trinca</a>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="research.html">Research</a></li>
+    <li><a href="publications.html" aria-current="page">Publications</a></li>
+    <li><a href="cv.html">CV</a></li>
+  </ul>
+</nav>
+
+<section class="page-section page-top">
+  <!--<p class="section-label">Publications</p>-->
+  <h1>Publications</h1>
+  <div class="divider" style="margin-top: 25px;"></div>
+  <p class="section-intro">
+    <!--Grouped by year and tagged by author position. Citation counts come from NASA ADS and refresh
+    automatically, so this list stays in step with the record rather than slowly going stale.-->
+  </p>
+
+  <div class="metrics-grid">
+    <div class="metric">
+      <p class="metric-value" id="m-total">—</p>
+      <p class="metric-label">Papers</p>
+    </div>
+    <div class="metric">
+      <p class="metric-value" id="m-first">—</p>
+      <p class="metric-label">First author</p>
+    </div>
+    <div class="metric">
+      <p class="metric-value" id="m-cites">—</p>
+      <p class="metric-label">Citations</p>
+    </div>
+    <div class="metric">
+      <p class="metric-value" id="m-hindex">—</p>
+      <p class="metric-label">h-index</p>
+    </div>
+  </div>
+  <p class="metrics-stamp" id="pub-stamp"></p>
+
+  <div class="btn-row" style="margin-top:1.5rem;">
+    <a class="btn btn-outline" href="https://ui.adsabs.harvard.edu/search/q=orcid%3A0000-0002-1899-4360&amp;sort=date%20desc" target="_blank" rel="noopener">Full list on ADS →</a>
+    <!--a class="btn btn-outline" href="https://arxiv.org/a/trinca_a_1" target="_blank" rel="noopener">arXiv →</a>-->
+    <a class="btn btn-outline" href="https://orcid.org/0000-0002-1899-4360" target="_blank" rel="noopener">ORCID →</a>
+  </div>
+
+  <div class="filters" role="group" aria-label="Filter publications by author position">
+    <button class="filter" type="button" data-filter="all" aria-pressed="true">All <em></em></button>
+    <button class="filter" type="button" data-filter="first" aria-pressed="false">First author <em></em></button>
+    <button class="filter" type="button" data-filter="second" aria-pressed="false">Second author <em></em></button>
+    <button class="filter" type="button" data-filter="co" aria-pressed="false">Co-author <em></em></button>
+    <button class="filter" type="button" data-filter="refereed" aria-pressed="false">Refereed <em></em></button>
+  </div>
+
+  <div class="pub-list" id="pub-list"></div>
+</section>
+
+<footer>
+  © 2026 Alessandro Trinca · Institute for Astronomy, University of Edinburgh
+  <br>
+  <span style="font-size:11px; opacity:0.45;">Bibliographic data · NASA ADS</span>
+</footer>
+
+<script src="data/publications.js"></script>
+<script src="assets/site.js"></script>
+</body>
+</html>
